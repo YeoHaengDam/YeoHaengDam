@@ -72,7 +72,8 @@ CREATE TABLE Notice (
 CREATE TABLE article_image (
     id INT AUTO_INCREMENT PRIMARY KEY,
     article_id INT NOT NULL,
-    image_url VARCHAR(255) NOT NULL,
+    original_name VARCHAR(255) NOT NULL,
+    stored_name VARCHAR(255) NOT NULL,
     FOREIGN KEY (article_id) REFERENCES Article(article_id) ON DELETE CASCADE
 );
 
