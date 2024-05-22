@@ -92,7 +92,6 @@ public class UserController {
     @PostMapping("/reset/password")
     public ResponseEntity<String> resetPassword(@RequestBody Password password){
         return ResponseEntity.ok(userService.resetPassword(password));
-
     }
 
 
